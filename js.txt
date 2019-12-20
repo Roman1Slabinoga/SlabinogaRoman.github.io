@@ -1,0 +1,31 @@
+// var wrapper = document.getElementById('wrapper');
+
+// for(let count = 0; count<=100; count++) {
+//   let div = document.createElement('div');
+//   div.style.marginRight = Math.random() *100 + 'px';
+//   if(count % 3 == 0 ) {
+//     div.style.marginTop = Math.random() *100 + 'px';
+//   }  
+//   if(count % 2 == 0) {
+//         div.style.marginTop = Math.random() *100 + 'px';
+//   }
+// wrapper.appendChild(div);  
+// }
+
+
+var wrapper = document.getElementById('wrapper');
+
+for(let count = 0; count<=180; count++) {
+  let div = document.createElement('div');
+  div.style.marginRight = Math.random() *50 + 'px';
+  div.style.marginTop = Math.random() *120 + 'px';
+  if(count % 3 == 0 ) {
+   // div.style.backgroundColor ='blue';
+//    div.style.marginTop = Math.random() *10 + 'px';
+
+  }  
+  if(count % 2 == 0) {
+       div.style.marginTop = Math.random() *20 + 'px';
+  }
+wrapper.appendChild(div);  
+}
