@@ -1,0 +1,62 @@
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+body {
+  background: black;
+}
+
+body .main_sec {
+  width: 99%;
+  height: 99vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+body .main_sec .animation {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-top: -800px;
+  cursor: pointer;
+}
+
+body .main_sec .animation a {
+  font-size: 0px;
+  font-family: light1;
+  margin: 13px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 750px) {
+  body .main_sec {
+    width: 95%;
+    height: 93vh;
+  }
+}
+/*# sourceMappingURL=styled.css.map */
