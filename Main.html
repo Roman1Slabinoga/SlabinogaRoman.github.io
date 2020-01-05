@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styled.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mouse.css">
+</head>
+<body>
+    <section id="home" class="Home">
+        <img class="cubes" data-aos="fade-right" src="img/Frame10.png" alt="">
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/logo.png" alt="">
+
+            </a>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main_home">
+        <div class="wrapper_main">
+            <div class="left" data-aos="zoom-in-right">
+                <h1 class="letters">Roman Slabinoga</h1>
+                <div class="degree ">
+                    <p>JUNIOR</p> 
+                    <p> WEB-DEVELOPER</p>
+                </div>
+            </div>
+            <div class="right" data-aos="zoom-in" >
+                <img src="img/image1.png" alt="Main picture in home">
+            </div>
+           
+        </div>
+        <div class="mouse2" >
+            <div class="middle">
+                <div class="mouse">
+                </div>
+            </div>
+        </div>
+    </div>    
+    </section>
+    <section id="services" class="services">
+       <div class="top_of_services">
+           <p>SERVICES</p>
+           <div class="line"></div>
+       </div>
+       <canvas data-aos="zoom-in-up" class="background1"></canvas>
+            <div class="services_wrapper">
+                    <div class="left_sight">
+                        <div class="circle">
+                            <img src="img/image 3.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="right_sight" >
+                        <div class="block" data-aos="zoom-out-left">
+                            <div class="top_block">
+                                <p>DESIGN/LAYOUT</p>
+                            </div>
+                            <ul>
+                                <li>Landing Page (HTML/CSS/JS)</li>
+                                <li>Corporate Page (HTML/CSS/JS)</li>
+                                <li>Online shop (React)</li>
+                            </ul>
+                        </div>
+                        <div class="block" data-aos="zoom-out-left" >
+                            <div class="top_block" >
+                                <p>DESIGN/LAYOUT</p>
+                            </div>
+                            <ul>
+                                <li>Landing Page (HTML/CSS/JS)</li>
+                                <li>Corporate Page (HTML/CSS/JS)</li>
+                                <li>Online shop (React)</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="top_of_portfolio">
+            <p>PORTFOLIO</p>
+            <div class="line"></div>
+        </div>    
+        <div class="container">
+  
+    <div class="slider-container">
+			<div>
+				<div>
+					<div class="slider">
+            
+						<div class="img" id="first">
+							<img src="img/work1 2.png">
+						</div>
+						<div class="img">
+							<img src="">
+						</div>
+						<div class="img">
+							<img src="https://media.gettyimages.com/photos/tulips-and-windmill-picture-id680242590?s=612x612">
+						</div>
+						<div class="img" id="last">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCSlkyhyTmCiSOA4GvnpRCsruA0hChaxWeddmovyf5fPtSBp76" >
+						</div>
+						<div class="img" id="last">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCSlkyhyTmCiSOA4GvnpRCsruA0hChaxWeddmovyf5fPtSBp76" >
+						</div>
+            	<div class="img" id="last">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCSlkyhyTmCiSOA4GvnpRCsruA0hChaxWeddmovyf5fPtSBp76" >
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="content">
+            <a href="" class="link">link</a>
+            <button class="btn" id="prev"> < </button>
+            <button class="btn" id="next"> > </button>
+                <!--<ul>
+                    <li class="option colored"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                </ul> -->
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js
+    "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script>
+        var particles = Particles.init({
+            selector: '.background1',
+            color: ['#000000', '#4baf93', '#31EC38'],
+            connectParticles: true
+        });
+        // $(document).mousemove(function(e){
+        //             var x = e.pageX / 55;
+        //             var y = e.pageY / 55;
+        //             $('.letters, .degree, .right').css({
+        //                 transform: 'translate(-'+x+'px, -'+y+'px)'
+        //             });
+        //         });
+        AOS.init();
+        var block = document.getElementsByClassName('animation');
+        var text = document.getElementById('first');
+        anime({
+            targets: block,
+            marginTop: '0px',
+            easing: 'easeOutElastic',
+            delay: 600,
+            
+            backgroundColor: {
+                value: 'black',
+                delay: 1100,
+                easing: 'easeInOutSine',
+                duration: 500
+            },
+            borderColor: {
+                value: '#ECAB31',
+                delay: 1000,
+                easing: 'easeInOutSine'
+            },
+            scale: {
+                value: '*=3',
+                delay: 1000
+            },
+            borderRadius: {
+                value: '-=50%',
+                delay:  1500,
+                duration: 2000
+            },
+            width: {
+                value: '+=30px',
+                delay: 1600,
+                duration: 1200,
+            },
+            boxShadow: {
+                value: '0px 0px 2px 0px rgba(0,0,0,0.75)',
+                delay: 1600
+            }
+        })
+        anime({
+            targets: text,
+            fontSize: '5px',
+            delay: 1660,
+            color: {
+                value: '#ECAB31',
+                delay: 1700
+            }
+        })
+    </script>
+</body>
+</html>
