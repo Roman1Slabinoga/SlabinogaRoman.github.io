@@ -1266,4 +1266,21 @@ header .nav nav ul li a:hover {
     top: 35%;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .Home .cubes {
+    left: -60%;
+  }
+  .main_home .wrapper_main .right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .main_home .wrapper_main .left h1 {
+    font-size: 57px;
+  }
+  .degree {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=style2.css.map */
