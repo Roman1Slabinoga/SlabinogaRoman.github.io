@@ -1283,4 +1283,35 @@ header .nav nav ul li a:hover {
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .Home .cubes {
+    left: -65%;
+  }
+  .main_home .wrapper_main .left h1 {
+    font-size: 48px;
+    line-height: 89px;
+  }
+  .services .top_of_services p {
+    font-style: 36px;
+  }
+  header .nav nav ul li a {
+    font-size: 11px;
+  }
+  .portfolio .top_of_portfolio p {
+    font-size: 35px;
+  }
+  .contact .name_of_contact p {
+    font-size: 50px;
+  }
+  .contact .name_of_contact {
+    width: 79px;
+  }
+  .contact .contacts .top_of_contacts {
+    width: 243px;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .right_contact ul li {
+    font-size: 15px;
+  }
+}
 /*# sourceMappingURL=style2.css.map */
