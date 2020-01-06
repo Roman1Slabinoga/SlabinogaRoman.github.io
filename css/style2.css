@@ -1232,4 +1232,38 @@ header .nav nav ul li a:hover {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .main_home .wrapper_main .right img {
+    margin-left: 16px;
+  }
+  .Home .cubes {
+    left: -54%;
+    top: 25%;
+  }
+  .main_home .wrapper_main .left h1 {
+    font-size: 70px;
+    line-height: 112px;
+  }
+  header .nav nav ul li a {
+    font-size: 14px;
+  }
+  .services .top_of_services p {
+    font-size: 55px;
+  }
+  .services .background1 {
+    position: absolute;
+    width: 114% !important;
+    height: 76% !important;
+    right: 300px !important;
+    /* border-bottom-left-radius: 100% !important; */
+    /* border-top-left-radius: 100% !important; */
+  }
+  .portfolio .slider-container {
+    height: 75%;
+  }
+  .portfolio .content {
+    top: 35%;
+  }
+}
 /*# sourceMappingURL=style2.css.map */
