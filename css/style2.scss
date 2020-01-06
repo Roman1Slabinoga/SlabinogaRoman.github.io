@@ -685,7 +685,7 @@ header {
 @media screen and (max-width: 1470px) {
   .contact .contacts {
     width: 88%;
-    height: auto;
+    height: 95vh;
   }
 }
 
@@ -963,6 +963,8 @@ header {
 @media screen and (max-width: 450px) {
   .main_home .wrapper_main .right img {
     margin-left: 16px;
+    width: 54%;
+    margin-top: -33px;
   }
   .Home .cubes {
     left: -54%;
@@ -1031,7 +1033,7 @@ header {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .Home .cubes {
     left: -65%;
   }
