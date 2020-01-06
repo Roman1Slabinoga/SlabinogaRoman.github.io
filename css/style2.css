@@ -1314,4 +1314,22 @@ header .nav nav ul li a:hover {
     font-size: 15px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .Home .cubes {
+    left: -74%;
+  }
+  .main_home .wrapper_main .left {
+    margin-left: 48px;
+  }
+  .services .top_of_services {
+    width: 110%;
+  }
+  .services .background1 {
+    position: absolute;
+    width: 146% !important;
+    height: 99% !important;
+    right: 0px !important;
+  }
+}
 /*# sourceMappingURL=style2.css.map */
