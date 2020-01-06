@@ -1223,16 +1223,21 @@ header .nav nav ul li a:hover {
     margin-left: 73px;
   }
   .contact .contacts .top_of_contacts .top_contacts input {
-    width: 80%;
+    width: 60%;
   }
   .contact .contacts .top_of_contacts .main_contacts .left_contact input {
-    width: 115%;
+    width: 90%;
   }
   .contact .contacts .top_of_contacts .main_contacts .left_contact textarea {
-    width: 113%;
+    width: 90%;
   }
   .contact .contacts .top_of_contacts .main_contacts .right_contact {
     width: 100%;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .right_contact ul li {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 30px;
   }
 }
 
