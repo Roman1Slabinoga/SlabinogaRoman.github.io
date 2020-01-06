@@ -986,6 +986,28 @@ header {
   }
 }
 
+@media screen and (max-width: 444px) {
+  .Home {
+    width: 94%;
+  }
+  .main_home .wrapper_main .left {
+    margin-left: 59px;
+  }
+  .portfolio .top_of_portfolio {
+    align-items: center;
+    width: 90%;
+  }
+  .portfolio .top_of_portfolio .line {
+    width: 98%;
+  }
+  .main_home .wrapper_main .left h1 {
+    font-size: 56px;
+  }
+  .portfolio {
+    height: 67vh;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .Home .cubes {
     left: -60%;
