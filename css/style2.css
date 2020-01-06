@@ -1199,10 +1199,10 @@ header .nav nav ul li a:hover {
     width: 57%;
   }
   .portfolio .top_of_portfolio p {
-    font-size: 50px;
+    font-size: 45px;
   }
   .services .top_of_services p {
-    font-style: 50px;
+    font-style: 45px;
   }
   .contact .contacts .top_of_contacts {
     width: 320px;
@@ -1249,7 +1249,7 @@ header .nav nav ul li a:hover {
     font-size: 14px;
   }
   .services .top_of_services p {
-    font-size: 55px;
+    font-size: 50px;
   }
   .services .background1 {
     position: absolute;
