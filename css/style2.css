@@ -722,12 +722,15 @@ header .nav nav ul li a:hover {
 }
 
 .contact {
-  width: 71%;
+  width: 80%;
   height: 73vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -758,10 +761,15 @@ header .nav nav ul li a:hover {
           transform: rotate(-90deg);
 }
 
-.contact .top_of_contacts {
+.contact .contacts {
+  width: 80%;
+  height: auto;
+}
+
+.contact .contacts .top_of_contacts {
   width: 900px;
   height: 600px;
-  margin-left: 120px;
+  margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -777,7 +785,7 @@ header .nav nav ul li a:hover {
           justify-content: flex-start;
 }
 
-.contact .top_of_contacts .top_contacts {
+.contact .contacts .top_of_contacts .top_contacts {
   width: 98%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,7 +799,7 @@ header .nav nav ul li a:hover {
   height: 100px;
 }
 
-.contact .top_of_contacts .top_contacts input {
+.contact .contacts .top_of_contacts .top_contacts input {
   width: 42%;
   height: 30px;
   background-color: transparent;
@@ -803,7 +811,7 @@ header .nav nav ul li a:hover {
   border-bottom: 1px solid white;
 }
 
-.contact .top_of_contacts .main_contacts {
+.contact .contacts .top_of_contacts .main_contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -816,7 +824,7 @@ header .nav nav ul li a:hover {
   color: white;
 }
 
-.contact .top_of_contacts .main_contacts .left_contact {
+.contact .contacts .top_of_contacts .main_contacts .left_contact {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -833,7 +841,7 @@ header .nav nav ul li a:hover {
           justify-content: flex-start;
 }
 
-.contact .top_of_contacts .main_contacts .left_contact input {
+.contact .contacts .top_of_contacts .main_contacts .left_contact input {
   width: 80%;
   color: white;
   cursor: pointer;
@@ -847,7 +855,7 @@ header .nav nav ul li a:hover {
   border-bottom: 1px solid white;
 }
 
-.contact .top_of_contacts .main_contacts .left_contact textarea {
+.contact .contacts .top_of_contacts .main_contacts .left_contact textarea {
   width: 80%;
   height: 170px;
   outline: none;
@@ -862,7 +870,7 @@ header .nav nav ul li a:hover {
   border: 1px solid white;
 }
 
-.contact .top_of_contacts .main_contacts .right_contact {
+.contact .contacts .top_of_contacts .main_contacts .right_contact {
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -873,7 +881,7 @@ header .nav nav ul li a:hover {
           flex-direction: column;
 }
 
-.contact .top_of_contacts .main_contacts .right_contact ul {
+.contact .contacts .top_of_contacts .main_contacts .right_contact ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -885,10 +893,343 @@ header .nav nav ul li a:hover {
   margin-top: 10px;
 }
 
-.contact .top_of_contacts .main_contacts .right_contact ul li {
+.contact .contacts .top_of_contacts .main_contacts .right_contact ul li {
   list-style-type: none;
   font-size: 18px;
   margin-top: 25px;
   font-family: light;
+}
+
+@media only screen and (max-width: 1629px) {
+  .main_home .wrapper_main .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main_home .wrapper_main .right img {
+    margin-top: 150px;
+  }
+  .portfolio .container {
+    width: 90vw;
+  }
+  .portfolio .content {
+    width: 84%;
+  }
+  .main_home .wrapper_main .left h1 {
+    font-size: 101px;
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  .contact .contacts {
+    width: 88%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1333px) {
+  .contact {
+    width: 83%;
+  }
+  .contact .top_of_contacts {
+    margin-left: 20px;
+  }
+  .main_home .wrapper_main .left h1 {
+    font-size: 91px;
+  }
+}
+
+@media screen and (max-width: 1169px) {
+  .services .background1 {
+    position: absolute;
+    width: 94% !important;
+    height: 95% !important;
+    right: 84px !important;
+    border-bottom-left-radius: 100% !important;
+    border-top-left-radius: 100% !important;
+  }
+  .portfolio #prev {
+    left: 0%;
+  }
+  .portfolio #next {
+    right: 0%;
+  }
+  .portfolio .top_of_portfolio {
+    width: 90%;
+  }
+  .services .services_wrapper {
+    width: 100%;
+  }
+  .services .top_of_services {
+    width: 86%;
+  }
+  .main_home .wrapper_main .left h1 {
+    font-size: 81px;
+  }
+  .main_home .wrapper_main .right img {
+    width: 96%;
+    height: auto;
+  }
+  .services .services_wrapper .left_sight img {
+    width: 470px;
+    height: auto;
+  }
+  .portfolio .content {
+    width: 100%;
+  }
+  .contact .contacts .top_of_contacts {
+    width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contact {
+    width: 95%;
+  }
+  .Home .cubes {
+    left: -44%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .contact .contacts .top_of_contacts .top_contacts {
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 100px;
+    justify-items: flex-start;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .left_contact input {
+    width: 88%;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .left_contact textarea {
+    width: 88%;
+    max-width: 400px;
+  }
+  .contact .contacts .top_of_contacts {
+    width: 633px;
+  }
+  .portfolio #prev {
+    left: 1%;
+    top: 50%;
+  }
+  .portfolio #next {
+    right: 1%;
+    top: 50%;
+  }
+  .main_home .wrapper_main .left h1 {
+    font-size: 73px;
+  }
+  .main_home .wrapper_main .right {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main_home .wrapper_main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main_home .wrapper_main .left {
+    width: 100%;
+  }
+  .main_home .wrapper_main .left h1 {
+    font-size: 108px;
+  }
+  .main_home .wrapper_main .right {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main_home .wrapper_main .right img {
+    width: 70%;
+    margin-top: 0px;
+  }
+  .contact .contacts .top_of_contacts .top_contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .contacts .top_of_contacts .top_contacts input {
+    width: 70%;
+  }
+  .contact .contacts .top_of_contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 633px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contact .contacts .top_of_contacts .main_contacts {
+    margin-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .contacts .top_of_contacts .main_contacts input {
+    width: 70%;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .left_contact {
+    width: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .left_contact input {
+    width: 100%;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .left_contact textarea {
+    max-width: 450px;
+    width: 100%;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .right_contact {
+    width: 73%;
+  }
+  .contact .contacts .top_of_contacts {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .Home .cubes {
+    left: -54%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .main_home .wrapper_main .left h1 {
+    font-size: 87px;
+  }
+  header .nav nav ul li a {
+    font-size: 15px;
+  }
+  header .logo {
+    width: 95px;
+  }
+  .services .top_of_services p {
+    font-size: 70px;
+  }
+  .portfolio .top_of_portfolio p {
+    font-size: 70px;
+  }
+  .portfolio .slider {
+    width: 400px;
+    height: 250px;
+  }
+  .portfolio .link {
+    left: 41%;
+    top: 83%;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .Home .cubes {
+    left: -67%;
+  }
+  .main_home .wrapper_main .left h1 {
+    font-size: 70px;
+    line-height: 112px;
+  }
+  .services .services_wrapper .left_sight img {
+    width: 350px;
+  }
+  .services .services_wrapper .right_sight ul li {
+    font-size: 16px;
+  }
+  .services .top_of_services .line {
+    width: 85%;
+  }
+  .portfolio .top_of_portfolio .line {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .contact .contacts .top_of_contacts .top_contacts input {
+    width: 50%;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .left_contact input {
+    width: 73%;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .left_contact textarea {
+    width: 71%;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .right_contact {
+    width: 57%;
+  }
+  .portfolio .top_of_portfolio p {
+    font-size: 50px;
+  }
+  .services .top_of_services p {
+    font-style: 50px;
+  }
+  .contact .contacts .top_of_contacts {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Home {
+    width: 89%;
+  }
+  .main_home .wrapper_main .right img {
+    margin-left: 20px;
+  }
+  .Home .cubes {
+    left: -45%;
+  }
+  .contact .contacts .top_of_contacts .top_contacts input {
+    width: 80%;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .left_contact input {
+    width: 115%;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .left_contact textarea {
+    width: 113%;
+  }
+  .contact .contacts .top_of_contacts .main_contacts .right_contact {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style2.css.map */
