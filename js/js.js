@@ -15,49 +15,55 @@
 const slider = document.querySelector(".slider");
 const btns = document.querySelectorAll(".btn");
 const slides = document.querySelectorAll(".img");
-const options = document.querySelectorAll('.option');
-const button = document.querySelector('.link');
-const url = ['https://roman1slabinoga.github.io/RomanS.github.io/', 'https://music.youtube.com/browse/VLPL-95FHe5Zg6c37Qlj9owMno8D6UGG5c31', 'https://www.youtube.com/']
-
+const options = document.querySelectorAll(".option");
+const button = document.querySelector(".link");
+const url = [
+  "https://roman1slabinoga.github.io/RomanS.github.io/",
+  "https://music.youtube.com/browse/VLPL-95FHe5Zg6c37Qlj9owMno8D6UGG5c31",
+  "https://www.youtube.com/"
+];
 
 var index = 2;
 var size = slides[index].clientWidth;
 
-
-function update(){ 
-        slider.style.transform = "translateX("+ (-size * index) +"px)";
+function update() {
+  slider.style.transform = "translateX(" + -size * index + "px)";
 }
 
-slide()
+slide();
 
-function slide(){
-    slider.style.transition = "transform .5s ease-in-out";
-    button.setAttribute('href', url[index])
+function slide() {
+  slider.style.transition = "transform .5s ease-in-out";
+  button.setAttribute("href", url[index]);
 
-    update();
+  update();
 }
 
-function btnCheck(){
-	if(this.id === "prev"){
-		if (index === 0){
-      index++
-    }else {
-      index--
-    }
-	}
-	else{
-		if (index === 4){
-      index--
+function btnCheck() {
+  if (this.id === "prev") {
+    if (index === 0) {
+      index++;
     } else {
-      index++
+      index--;
     }
-	}
-  
-	  slide();
+  } else {
+    if (index === 4) {
+      index--;
+    } else {
+      index++;
+    }
+  }
+
+  slide();
 }
 
+btns.forEach(btn => btn.addEventListener("click", btnCheck));
 
+$(function() {
+  $(".menu-trigger").on("click", function() {
+    $(this).toggleClass("active");
+    $("#menu").toggleClass("active");
 
-
-
-btns.forEach(btn => btn.addEventListener('click', btnCheck));
+    return false;
+  });
+});
