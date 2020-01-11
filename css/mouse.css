@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
   .mouse2 {
     display: none;
   }
