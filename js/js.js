@@ -75,31 +75,23 @@ $(function() {
 
 $(document).ready(function () {
   $('.submit').click(function (event) {
-    event.preventDefault();
-    console.log('roma loxx')
+    console.log('roma lox')
 
     var email = $(".email").val()
     var subject = $(".name").val()
     var massage = $(".message").val()
-    var statusElm = $(".status").val()
-
+    
     if(email.length > 5 && email.includes('@') && email.includes('.')){
-      statusElm.append("<div>Email is valid</div>")
     } else {
-      statusElm.append("<div>Email is not valid</div>")
+      event.preventDefault();
     }
-
     if(subject.length > 2){
-      statusElm.append("<div>Subject is valid</div>")
     } else {
-      statusElm.append("<div>Subject is not valid</div>")
+      event.preventDefault();
     }
-
     if(massage.length > 30){
-      statusElm.append("<div>Message is valid</div>")
     } else {
-      statusElm.append("<div>Message is not valid</div>")
+      event.preventDefault();
     }
-
   })
 })
