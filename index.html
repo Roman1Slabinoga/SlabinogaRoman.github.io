@@ -168,21 +168,23 @@
       <div class="contacts_main">
         <div class="input_wrapper">
           <div class="left_contacts">
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="Last name">
-            <input type="text" placeholder="Email">
+            <input type="text" class="name" placeholder="Your name">
+            <input type="text" class="name" placeholder="Last name">
+            <input type="email" class="email" placeholder="Email">
             <ul>
               <li>Phone: +380964735753</li>
               <li>Email: slabinogaroman@gmail.com</li>
             </ul>
           </div>
           <div class="right_contacts">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Type your message"></textarea>
-            <button>Send</button>
+            <textarea class="message" name="" id="" cols="30" rows="10" placeholder="Type your message"></textarea>
+            <button type="submit" class="submit">Send</button>
+            <div class="status"></div>
           </div>
         </div>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js
     "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
