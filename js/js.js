@@ -80,17 +80,25 @@ $(document).ready(function () {
     var email = $(".email").val()
     var subject = $(".name").val()
     var massage = $(".message").val()
+    const options = document.querySelectorAll(".status");
+
     
     if(email.length > 5 && email.includes('@') && email.includes('.')){
+      options.innerHTML('email valid')
     } else {
       event.preventDefault();
+      options.innerHTML('email not valid')
     }
     if(subject.length > 2){
+      options.innerHTML('subjuct valid')
     } else {
       event.preventDefault();
+      options.innerHTML('subjuct not valid')
     }
     if(massage.length > 30){
+      options.innerHTML('massage valid')
     } else {
+      options.innerHTML('massage not valid')
       event.preventDefault();
     }
   })
