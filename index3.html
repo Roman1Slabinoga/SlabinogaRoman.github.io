@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styled.css" />
+    <!-- <link rel="stylesheet" href="css/style2.css"> -->
+    <title>Home page</title>
+  </head>
+  <body>
+    <canvas class="background"></canvas>
+    <section class="main_sec" id="main_sec">
+      <div class="animation" href="Main.html">
+        <a id="first" href="Main.html" onclick="click(this)"
+          >Click click click</a
+        >
+      </div>
+    </section>
+    <script src="js/js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script>
+      var particles = Particles.init({
+        selector: ".background",
+        color: "white"
+      });
+
+      AOS.init();
+      var block = document.getElementsByClassName("animation");
+      var text = document.getElementById("first");
+      anime({
+        targets: block,
+        marginTop: "0px",
+        easing: "easeOutElastic",
+        delay: 600,
+
+        backgroundColor: {
+          value: "black",
+          delay: 1100,
+          easing: "easeInOutSine",
+          duration: 500
+        },
+        borderColor: {
+          value: "#ECAB31",
+          delay: 1000,
+          easing: "easeInOutSine"
+        },
+        scale: {
+          value: "*=3",
+          delay: 1000
+        },
+        borderRadius: {
+          value: "-=50%",
+          delay: 1500,
+          duration: 2000
+        },
+        width: {
+          value: "+=30px",
+          delay: 1600,
+          duration: 1200
+        },
+        boxShadow: {
+          value: "0px 0px 2px 0px rgba(0,0,0,0.75)",
+          delay: 1600
+        }
+      });
+      anime({
+        targets: text,
+        fontSize: "5px",
+        delay: 1660,
+        color: {
+          value: "#ECAB31",
+          delay: 1700
+        }
+      });
+    </script>
+  </body>
+</html>
