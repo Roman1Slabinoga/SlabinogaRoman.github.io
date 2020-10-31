@@ -403,147 +403,188 @@ header {
   }
 
   .container {
-    width: 99vw;
+    width: 80vw;
     height: 80%;
     overflow: hidden;
     position: relative;
-  }
-
-  .slider-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
-
-  .slider-container:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
-  }
-
-  .slider-container > div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    z-index: 1;
-  }
-
-  .slider-container > div > div {
-    overflow: hidden;
-    box-shadow: 2px 0px 67px -27px white;
-    border-radius: 16px;
-  }
-
-  .slider {
-    width: 800px;
-    display: grid;
-    grid-template-columns: repeat(7, 100%);
-    height: 450px;
-  }
-
-  .img {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .img img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-  }
-
-  .content {
-    position: absolute;
-    z-index: 4;
-    width: 70%;
-    height: 450px;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
-
-  .btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 1rem 1.2rem;
-    border-radius: 50%;
-    background: white;
-    border: none;
-    color: black;
-    outline: none;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: 0.3s;
-  }
-
-  .btn:hover {
-    opacity: 0.8;
-    color: red;
-  }
-
-  #prev {
-    left: 5%;
-  }
-
-  #next {
-    right: 5%;
-  }
-
-  .link {
-    position: absolute;
-    z-index: 4;
-    left: 47%;
-    top: 105%;
-    display: flex;
-    width: 100px;
-    align-items: center;
-    height: 30px;
-    border: 1px solid red;
-    text-align: center;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    font-family: sans-serif;
-  }
-
-  ul {
-    position: absolute;
-    list-style: none;
-    display: flex;
-    bottom: 2%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  ul li {
-    margin: 0.3rem;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    border: 2.5px solid #2ecc71;
-    cursor: pointer;
-  }
-
-  ul li.colored {
-    background-color: #2ecc71;
+    justify-content: space-around;
+    .works{
+      width: 30%;
+      overflow: hidden;
+      height: 261px;
+      box-shadow: 0px 0px 25px -7px #FF0000;
+      transition: 0.5s;   
+      &:hover {
+        transform:scale(1.1) ;
+      }   
+      a{
+        width: 100%;
+        height: 100%;
+        div{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            width: 100%;
+            height: 100%;
+            opacity: 0.75;
+            transition: 0.5s;
+            &:hover {
+              opacity: 1;
+            }
+            
+          }
+        }
+      }
+      p{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+      }
+    }
   }
 }
+//   .slider-container {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     z-index: 0;
+//   }
+
+//   .slider-container:after {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
+//   }
+
+//   .slider-container > div {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 1;
+//   }
+
+//   .slider-container > div > div {
+//     overflow: hidden;
+//     box-shadow: 2px 0px 67px -27px white;
+//     border-radius: 16px;
+//   }
+
+//   .slider {
+//     width: 800px;
+//     display: grid;
+//     grid-template-columns: repeat(7, 100%);
+//     height: 450px;
+//   }
+
+//   .img {
+//     position: relative;
+//     overflow: hidden;
+//   }
+
+//   .img img {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     width: 100%;
+//   }
+
+//   .content {
+//     position: absolute;
+//     z-index: 4;
+//     width: 70%;
+//     height: 450px;
+//     left: 50%;
+//     top: 50%;
+//     transform: translateX(-50%) translateY(-50%);
+//   }
+
+//   .btn {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     padding: 1rem 1.2rem;
+//     border-radius: 50%;
+//     background: white;
+//     border: none;
+//     color: black;
+//     outline: none;
+//     cursor: pointer;
+//     opacity: 0.5;
+//     transition: 0.3s;
+//   }
+
+//   .btn:hover {
+//     opacity: 0.8;
+//     color: red;
+//   }
+
+//   #prev {
+//     left: 5%;
+//   }
+
+//   #next {
+//     right: 5%;
+//   }
+
+//   .link {
+//     position: absolute;
+//     z-index: 4;
+//     left: 47%;
+//     top: 105%;
+//     display: flex;
+//     width: 100px;
+//     align-items: center;
+//     height: 30px;
+//     border: 1px solid red;
+//     text-align: center;
+//     justify-content: center;
+//     color: white;
+//     text-decoration: none;
+//     border-radius: 25px;
+//     font-family: sans-serif;
+//   }
+
+//   ul {
+//     position: absolute;
+//     list-style: none;
+//     display: flex;
+//     bottom: 2%;
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
+
+//   ul li {
+//     margin: 0.3rem;
+//     width: 18px;
+//     height: 18px;
+//     border-radius: 50%;
+//     border: 2.5px solid #2ecc71;
+//     cursor: pointer;
+//   }
+
+//   ul li.colored {
+//     background-color: #2ecc71;
+//   }
+// }
+
 
 // CONTACT
 
@@ -687,15 +728,7 @@ header {
   .main_home .wrapper_main .left h1 {
     font-size: 90px;
   }
-  .portfolio .container {
-    width: 96vw;
-    #prev {
-      left: -8%;
-    }
-    #next {
-      right: -8%;
-    }
-  }
+ 
   .services .top_of_services p,
   .portfolio .top_of_portfolio p,
   .contacts .top_of_contacts p {
@@ -704,13 +737,18 @@ header {
   .services .services_wrapper .left_sight img {
     width: 400px;
   }
-  .portfolio .slider {
-    width: 750px;
-    height: 450px;
-  }
+  
 }
 
 @media screen and (max-width: 1260px) {
+  
+  .portfolio .container .works {
+    width: 56%;
+    margin: 20px;
+}
+.portfolio .container {
+  height: 100%;
+}
   header .nav {
     width: 350px;
     nav {
@@ -743,10 +781,7 @@ header {
   .contacts .top_of_contacts p {
     font-size: 63px;
   }
-  .portfolio .slider {
-    width: 700px;
-    height: 430px;
-  }
+ 
   .contacts .contacts_main .input_wrapper .left_contacts input,
   .contacts .contacts_main .input_wrapper .right_contacts input {
     font-size: 15px;
@@ -790,23 +825,7 @@ header {
   .services .services_wrapper .left_sight img {
     width: 346px;
   }
-  .portfolio {
-    .link {
-      left: 44%;
-    }
-    .slider {
-      width: 540px;
-      height: 300px;
-    }
-    .container {
-      #prev {
-        left: -15%;
-      }
-      #next {
-        right: -15%;
-      }
-    }
-  }
+
   .contacts .contacts_main .input_wrapper .left_contacts,
   .contacts .contacts_main .input_wrapper .right_contacts {
     width: 46%;
@@ -814,6 +833,10 @@ header {
 }
 
 @media screen and (max-width: 850px) {
+  .portfolio .container {
+    width: 92vw;
+    
+}
   .main_home {
     height: 615px;
   }
@@ -852,22 +875,13 @@ header {
   .services {
     height: 80vh;
   }
-  .portfolio .slider {
-    width: 430px;
-    height: 264px;
-  }
+
   .portfolio .content {
     height: 253px;
   }
-  .portfolio .link {
-    left: 41%;
-  }
-  .portfolio .container {
-    height: 72%;
-  }
-  .portfolio {
-    height: 62vh;
-  }
+
+ 
+
   .main_home .wrapper_main .left h1 {
     font-size: 62px;
   }
@@ -1066,10 +1080,7 @@ header {
   .contacts .contacts_main .input_wrapper .right_contacts button {
     width: 100%;
   }
-  .portfolio .slider {
-    width: 295px;
-    height: 173px;
-  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -1092,14 +1103,8 @@ header {
   .services .services_wrapper .right_sight ul li {
     font-size: 13px;
   }
-  .portfolio .slider {
-    width: 239px;
-    height: 132px;
-  }
-  .portfolio .link {
-    left: 34%;
-    top: 82%;
-  }
+
+  
 }
 
 @media screen and (max-width: 400px) {
